@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>css</title>
+	<!-- <link rel="stylesheet" href="stlye.css"> -->
+	<style>
+		/*@import url("style.css");*/
+		@import "style.css"
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam possimus ab distinctio, iusto dolores eveniet, eaque consequuntur excepturi minus, incidunt tempora eos? At sit iusto eum molestiae iste, quaerat nostrum.</p>
+	<p style="color:blue;">Ullam, deleniti nulla voluptate a ut delectus eos itaque eaque dolor esse necessitatibus corporis nobis, libero, ab ad temporibus totam dicta, et voluptatem alias consectetur! Ratione atque ab voluptate eligendi!</p>
+	<p style="color:skyblue; font-size:50px;">Quisquam dignissimos, fuga ipsam suscipit necessitatibus hic esse consequatur voluptates odit quibusdam, pariatur officiis ab consequuntur quam animi, ea atque eum eius accusamus non possimus cupiditate quis totam. Dolor, perspiciatis.</p>
+
+	<style>
+		/*ul{color:red;}*/
+		#nav{color:white;}
+		.menu{color:black;}
+
+
+		/** <tag name < class name  < Id  < inline style  <*/
+		/*!important*/
+	</style>
+
+	<ul id="nav">
+		<li class="menu" style="color:red;">menu</li>
+		<li class="menu">menu</li>
+		<li class="menu">menu</li>
+		<li class="menu">menu</li>
+		<li class="menu">menu</li>
+
+	</ul>
+
+	<style>
+		#nav1>li{color:red;}
+		ul#nav1>li{color:red;}
+		ul #nav1 li{color:red;}
+
+		ul#nav1 a{color:blue;}
+	</style>
+
+
+	<!-- ul#nav1>li.menu1*5>{menu} -->
+	<ul id="nav1">
+		<li class="menu1">menu</li>
+		<li class="menu1">menu</li>
+		<li class="menu1">menu</li>
+		<li class="menu1">menu</li>
+		<li class="menu1">menu</li>
+	</ul>
+
+	<header id="header">
+		<h1>logo</h1>
+		<nav id="nav">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
