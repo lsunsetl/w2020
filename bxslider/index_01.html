@@ -16,15 +16,38 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<style>
 		div.visual{width: 1200px;height: 500px;margin: 0 auto;}
+		nav.gnbWrap{width: 1200px;margin: 10px auto;
+			border-top: 2px solid #ddd;
+			border-bottom: 2px solid #ddd;
+		}
+		nav.gnbWrap>ul{}
+		nav.gnbWrap>ul:after{content:"";clear: both;display: block;}
+		nav.gnbWrap>ul>li{float: left;width: 20%;}
+		nav.gnbWrap>ul>li>a{display: block;text-align: center;line-height: 45px;}
+		nav.gnbWrap>ul>li>a:hover{background-color:#ddd;color:white;}
 	</style>
 	<script>
 		// $(document).ready(function(어떤값을넣어줌){} );
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({auto:true});
 		} );
+		// $(document).ready();
+		// $(document).ready(function(){});
+		// $(document).ready(function(){
+		// 	$(".slider").bxSlider(auto:true);
+		// });
 	</script>	
 </head>
 <body>
+	<nav class="gnbWrap">
+		<ul>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+		</ul>
+	</nav>
 	<div class="visual">
 		<ul class="slider">
 			<li><img src="images/pc01.jpg" alt="이미지1"></li>
