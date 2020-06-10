@@ -11,13 +11,15 @@
 		.clearfix:after{content: "";clear: both;display: block;}
 
 	header.hdWrap{width: 1200px;height: 45px;margin: 0 auto;
-					background-color:skyblue;position: relative;p10}
+					background-color:skyblue;position: relative;margin-bottom: 10px;}
 	header.hdWrap>h1{width: 100px;background-color:gray;line-height: 45px;}
 	nav.gnb{width: 800px;background-color:orange;position: absolute;right: 0;
 		top: 0;}
 	/*nav.gnb>ul:after{content:"";display: block;clear: both;}*/
 	nav.gnb>ul>li{float: left;width: 20%;}
 	nav.gnb>ul>li>a{display: block;text-align: center;line-height: 45px;}
+	div.visual{height: 300px;background-color: pink;}
+	section.content>h3:after{content:"";display: block;width: 50px;height: 2px;background-color: #000;margin: 10px auto;}
 </style>
 </head>
 <body>
@@ -40,6 +42,8 @@
 	nav.gnb1>ul{}
 	nav.gnb1>ul>li{float:left; width: 20%;}
 	nav.gnb1>ul>li>a{display: block;text-align: center;line-height: 45px;}
+	section.content{width: 1200px;margin: 0 auto;height: 300px;
+		text-align: center;padding:20px;}
 </style>
 	<header class="hdWrap1 clearfix">
 		<h1><a href="#">LOGO</a></h1>
@@ -53,5 +57,11 @@
 			</ul>
 		</nav>
 	</header>
+	<div class="visual">	</div>
+		<section class="content">
+			<h3>information</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dicta dolorum adipisci consequatur quasi pariatur in reiciendis ipsam eveniet, voluptas accusantium delectus quibusdam, officia a minus omnis provident, molestiae non.</p>
+		</section>
+
 </body>
 </html>
