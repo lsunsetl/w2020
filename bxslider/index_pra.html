@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+
+	<!-- script src -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true,mode:"vertical"});
+			$(".sliderOne").bxSlider();
+		});
+	</script>
+	<style>
+	div.sliderWrap{}
+		ul.slider>li>img{width: 100%;}
+		div.Wrap{background-color:skyblue;}
+		div.sliderOneWrap{width: 1200px;margin: 0 auto;}
+
+		.bx-wrapper{
+		-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
+    	box-shadow:none;
+    	border:  0 none;
+    	margin-bottom: 0;}
+    	.bx-wrapper .bx-pager {
+   		bottom:10px;}
+
+   		.contents{height: 400px; background-color:orange;}
+	
+	</style>
+
+
+</head>
+<body>
+<div class="sliderWrap">
+	<ul class="slider">
+		<li><img src="images/pc01.jpg" alt="일"></li>
+		<li><img src="images/pc02.jpg" alt="이"></li>
+		<li><img src="images/pc03.jpg" alt="삼"></li>
+	</ul>
+</div>
+<div class="Wrap">
+	<div class="sliderOneWrap">
+		<ul class="sliderOne">
+			<li><img src="images/pc01.jpg" alt="일"></li>
+			<li><img src="images/pc02.jpg" alt="이"></li>
+			<li><img src="images/pc03.jpg" alt="삼"></li>
+		</ul>
+	</div>
+</div>
+<div class="contents"></div>
+</body>
+</html>
