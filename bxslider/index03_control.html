@@ -10,23 +10,45 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("#slider").bxSlider({
+			var mySlider=$("#slider").bxSlider({
 				auto:true, //슬라이드자동
 				mode:"fade", //슬라이드방향
 				controls:false, //pre next 버튼 사용안함
 				pager:false //이동버튼 사용안함
 			});
+
+			$(".nextBtn").click(function(){
+				mySlider.goToNextslide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevslide();});
+
 		}); 
 	</script>
 	<style>
+		#sliderWrap{width: 1200px;margin: 0 auto;position: relative;}
 		#slider img{width: 100%;}
+		.nextBtn,.prevBtn{width: 64px;
+			position: absolute;top: 50%; margin-top:-50px;
+			cursor:pointer;
+		}
+		.prevBtn{left:10px;}
+		.nextBtn{right: 10px;}
+		
 	</style>
 </head>
 <body>
-	<ul id="slider">
-		<li><img src="images/img01.jpg" alt=""></li>
-		<li><img src="images/img02.jpg" alt=""></li>
-		
-</ul>
+	<div id="sliderWrap">
+		<ul id="slider">
+			<li><img src="images/img01.jpg" alt=""></li>
+			<li><img src="images/img02.jpg" alt=""></li>
+		</ul>
+		<div class="nextBtn">
+			<img src="images/next.png" alt="">
+		</div>
+		<div class="prevBtn">
+			<img src="images/prev.png" alt="">
+		</div>
+	</div>
 </body>
 </html>
